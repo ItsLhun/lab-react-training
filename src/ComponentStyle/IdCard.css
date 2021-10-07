@@ -1,0 +1,9 @@
+.Card {
+  display: flex;
+  flex-direction: row;
+}
+
+.Card > div:last-child {
+  margin-left: 1em;
+  text-align: left;
+}
