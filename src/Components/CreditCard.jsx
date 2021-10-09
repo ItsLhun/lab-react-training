@@ -33,12 +33,14 @@ class CreditCard extends Component {
             alt="type of card"
           />
         </div>
-        <div>•••• •••• •••• {number.slice(number.length - 4)}</div>
+        <div className="card-number">
+          •••• •••• •••• {number.slice(number.length - 4)}
+        </div>
         <div>
           Expires {expirationMonth}/{expirationYear % 2000}
           <span className="bank-name">{bank}</span>
+          <div>{owner}</div>
         </div>
-        <div>{owner}</div>
       </div>
     );
   }

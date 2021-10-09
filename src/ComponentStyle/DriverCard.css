@@ -1,0 +1,32 @@
+.DriverCard {
+  background-color: rgb(88, 88, 204);
+  border-radius: 0.7rem;
+  padding: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+.DriverCard h3 {
+  font-size: 1.5rem;
+}
+.DriverCard .Rating {
+  margin: 0;
+}
+.DriverCard > * {
+  margin: 0 0.2rem;
+}
+
+.DriverCard > img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.right-side-card {
+  text-align: left;
+}
+.right-side-card > * {
+  /* margin: */
+}

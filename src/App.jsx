@@ -5,6 +5,12 @@ import Greetings from './Components/Greetings';
 import Random from './Components/Random';
 import BoxColor from './Components/BoxColor';
 import CreditCard from './Components/CreditCard';
+import Rating from './Components/Rating';
+import DriverCard from './Components/DriverCard';
+import LikeButton from './Components/LikeButton';
+import ClickablePicture from './Components/ClickablePicture';
+import Dice from './Components/Dice';
+import Carousel from './Components/Carousel';
 
 function App() {
   return (
@@ -65,6 +71,54 @@ function App() {
         owner="Firstname Lastname"
         bgColor="#ddbb55"
         color="white"
+      />
+      <h1 className="align-left m-1">Rating</h1>
+      <Rating>0</Rating>
+      <Rating>1.49</Rating>
+      <Rating>1.5</Rating>
+      <Rating>3</Rating>
+      <Rating>4</Rating>
+      <Rating>5</Rating>
+      <h1 className="align-left m-1">DriverCard</h1>
+      <DriverCard
+        name="Travis Kalanick"
+        rating={4.2}
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE',
+        }}
+      />
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER',
+        }}
+      />
+      <h1 className="align-left m-1">LikeButton</h1>
+      <div className="align-left m-1">
+        <LikeButton /> <LikeButton />
+      </div>
+      <h1 className="align-left m-1">ClickablePicture</h1>
+      <div className="align-left m-1">
+        <ClickablePicture
+          img="/img/persons/maxence.png"
+          imgClicked="/img/persons/maxence-glasses.png"
+        />
+      </div>
+      <h1 className="align-left m-1">Dice</h1>
+      <Dice />
+      <h1 className="align-left m-1">Carousel</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
       />
     </div>
   );
