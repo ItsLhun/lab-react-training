@@ -1,0 +1,12 @@
+.selected-card {
+  background-color: #a3d2e2;
+}
+.country-btn {
+  border: 1px solid lightgray;
+  padding: 0.5em;
+  margin: 0.5em;
+  background-color: white;
+}
+.selected-btn {
+  background-color: #a3d2e2;
+}
