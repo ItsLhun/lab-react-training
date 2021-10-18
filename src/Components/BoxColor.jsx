@@ -4,7 +4,7 @@ import '../ComponentStyle/BoxColor.css';
 class BoxColor extends Component {
   componentToHex(c) {
     let hex = c.toString(16);
-    return hex.length == 1 ? '0' + hex : hex;
+    return hex.length === 1 ? '0' + hex : hex;
   }
   rgbToHex(r, g, b) {
     return (

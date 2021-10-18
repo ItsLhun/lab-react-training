@@ -8,7 +8,7 @@ class DriverCard extends Component {
     const { name, rating, img, car } = this.props;
     return (
       <div className="m-1 DriverCard">
-        <img src={img} />
+        <img src={img} alt="driver" />
         <div className="right-side-card">
           <h3>{name}</h3>
           <Rating>{rating}</Rating>

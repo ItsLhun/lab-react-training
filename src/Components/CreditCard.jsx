@@ -4,7 +4,7 @@ import '../ComponentStyle/CreditCard.css';
 
 class CreditCard extends Component {
   returnRightImg(type) {
-    return type == 'Visa' ? '/img/visa.png' : '/img/master-card.svg';
+    return type === 'Visa' ? '/img/visa.png' : '/img/master-card.svg';
   }
 
   render() {

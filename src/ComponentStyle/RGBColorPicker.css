@@ -1,0 +1,10 @@
+.color-square {
+  border: 1px solid black;
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.color-square + span {
+  margin-left: 1rem;
+}

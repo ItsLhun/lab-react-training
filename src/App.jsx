@@ -13,6 +13,8 @@ import Dice from './Components/Dice';
 import Carousel from './Components/Carousel';
 import NumbersTable from './Components/NumbersTable';
 import FaceBook from './Components/FaceBook';
+import SignupPage from './Components/SignupPage';
+import RGBColorPicker from './Components/RGBColorPicker';
 
 function App() {
   return (
@@ -126,6 +128,10 @@ function App() {
       <NumbersTable limit={12} />
       <h1 className="align-left m-1">Facebook</h1>
       <FaceBook />
+      <h1 className="align-left m-1">SignupPage</h1>
+      <SignupPage />
+      <h1 className="align-left m-1">RGBColorPicker</h1>
+      <RGBColorPicker />
     </div>
   );
 }
